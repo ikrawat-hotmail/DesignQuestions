@@ -68,3 +68,10 @@ private:
 
 
 static ITimer *timer = nullptr;
+
+
+
+// Key is
+// 1. One timer service, hence use singleton pattern
+// 2. Timer service can be implemeted using a map or priority_queue
+// 3. Running a separate thread for sleeping the closest expiry timer
